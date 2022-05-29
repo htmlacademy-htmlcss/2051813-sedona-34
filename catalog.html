@@ -10,7 +10,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a  class="logo" href="index.html">
-              <img src="#" alt="Логотип города Седона">
+              <img src="images/logo/logo.sedona.svg" width="139"  height="70" alt="Логотип города Седона">
             </a>
           </li>
           <li class="navigation-item">
@@ -100,32 +100,32 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">↩
+          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип Жилья:</legend>↩
 
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type-house-group" value="hotel">↩
+                  <input class="control-input" type="radio" name="type-house-group" value="hotel">
                   Гостиница
                 </label>
               </li>
 
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type-house-group" value="motel">↩
+                  <input class="control-input" type="radio" name="type-house-group" value="motel">
                   Мотель
                 </label>
               </li>
 
               <li class="catalog-filter-item">↩
                 <label class="control">↩
-                  <input class="control-input" type="radio" name="type-house-group" value="apartments">↩
-                  Апартаменты↩
-                </label>↩
-              </li>↩
+                  <input class="control-input" type="radio" name="type-house-group" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
             </ul>
-          </fieldset>↩
+          </fieldset>
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
@@ -142,11 +142,13 @@
           </fieldset>
 
           <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
+          <button class="button" type="reset">Сбросить</button>
         </form>
+      </section>
 
-        <span> найдено гостиниц:38 </span>
-
+      <section>
+        <div>
+          <h2> найдено гостиниц:38 </h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap"> Сначала дешёвое</option>
           <option value="popular">Сначала популярное </option>
@@ -157,58 +159,80 @@
           <span class="visually-hidden"> Показать карточки </span>
         </a>
         <a href="#" class="button button-light">
-          <span class="visually-hidden"> Показать блоки</span>
+          <span class="visually-hidden"> Показать слайд</span>
         </a>
         <a href="#" class="button button-light">
           <span class="visually-hidden"> Показать список</span>
         </a>
+        </div>
 
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="" alt="">
+              <img class="hotel-card-image" src="images/hotel/hotel-1.jpg" width="300" height="211" alt="фотографии отеля Amara Resort & Spa">
               <h3 class="hotel-card-title"> Amara Resort & Spa </h3>
             </a>
             <span class="type-hotel"> Гостиница </span>
             <span class="hotel-card-price"> От 4000 ₽</span>
             <a class="hotel-card-button button" href="#"> Подробрее </a>
             <button class="button" type="submit"> В избранное </button>
+            <ul class="star">
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+            </ul>
             <span>Рейтинг:8,5</span>
           </li>
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="" alt="">
+              <img class="hotel-card-image" src="images/hotel/hotel-2.jpg" width="300" height="211" alt="фотографии отеля Villas at Poco Diablo">
               <h3 class="hotel-card-title"> Villas at Poco Diablo</h3>
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="hotel-card-price">От 5000 ₽</span>
             <a class="hotel-card-button button" href="#">Подробрее</a>
             <button class="button" type="submit">В избранном</button>
+            <ul class="star">
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+            </ul>
             <span>Рейтинг:9,2</span>
           </li>
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src ="" alt="">
+              <img class="hotel-card-image" src ="images/hotel/hotel-3.jpg" width="300" height="211" alt="фотографии отеля Desert Quail Inn">
               <h3 class="hotel-card-title">Desert Quail Inn </h3>
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="hotel-card-price">От 2500 ₽</span>
             <a class="hotel-card-button button" href="#">Подробрее</a>
             <button class="button" type="submit">В избранное</button>
+            <ul class="star">
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+            </ul>
             <span>Рейтинг:6,9</span>
           </li>
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="" alt="">
+              <img class="hotel-card-image" src="images/hotel/hotel-4.jpg" width="300" height="211" alt="фотографии отеля  GreenTree Inn">
               <h3 class="hotel-card-title">  GreenTree Inn</h3>
             </a>
             <span class="type-hotel">Гостиница</span>
             <span class="hotel-card-price">От 1500 ₽</span>
             <a class="hotel-card-button button" href="#">Подробрее</a>
             <button class="button" type="submit">В избранное</button>
+            <ul class="star">
+              <li><img src="images/star.svg"></li>
+              <li><img src="images/star.svg"></li>
+            </ul>
             <span>Рейтинг:5,0</span>
           </li>
         </ul>
@@ -292,7 +316,7 @@
       <section class="footer-logo">
         <h2 class="visually-hidden">Логотип html.academy</h2>
         <a class="footer-logo-html" href="https://htmlacademy.ru/">
-          <img  src="#" alt="Логотип онлайн школы html.academy">
+          <img  src="images/logo/Logo.html.academy.svg" width="115" height="34" alt="Логотип онлайн школы html.academy">
         </a>
       </section>
 
