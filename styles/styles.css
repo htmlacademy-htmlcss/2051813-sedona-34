@@ -193,6 +193,18 @@ body{
 }
 
 /*Футер*/
+.page-footer{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.footer-social-list{
+  display: flex;
+  width: 160px;
+  margin-right: 250px;
+}
+
 .button-vk{
   background-image: url(../images/logo/logo.vk.svg);
   background-repeat: no-repeat;
@@ -213,6 +225,10 @@ body{
   color: #000000;
   font-size: 40px;
   line-height: 40px;
+}
+
+.footer-logo{
+  margin-left: auto;
 }
 
 /*Каталог*/
