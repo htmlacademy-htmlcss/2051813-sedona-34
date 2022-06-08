@@ -6,14 +6,18 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-logo">
           <li class="navigation-item">
             <a  class="logo">
               <img src="images/logo/logo.sedona.svg" width="139"  height="70" alt="Логотип города Седона">
             </a>
           </li>
+        </ul>
+
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a  class="navigation-link navigation-link-current" hre="">
               Главная
@@ -29,6 +33,9 @@
               Гостиницы
             </a>
           </li>
+        </ul>
+
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a  class="navigation-link">
               <span class="visually-hidden">
@@ -52,11 +59,11 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index main-container">
 
       <section  class="main-header">
         <div class="main-header-image">
-          <img  src="images/welcome.sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
+          <img  src="images/welcome.sedona.svg" class="main-logo" width="458" height="352" alt="Добро пожаловать в Седону.">
         </div>
 
         <div class="main-header-text">
@@ -89,7 +96,9 @@
             </div>
 
             <img class="advantages-item" src="images/advantages/advantages-1.jpg" width="800" height="384" alt="Переулок города Седона">
+          </li>
 
+          <li>
             <ul class="convenience">
               <li class="convenience-item">
                 <img src="images/advantages/advantages.home.svg" width="74" height="72" alt="иконка домика">
@@ -100,6 +109,7 @@
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
+
 
               <li class="convenience-item">
                 <img src="images/advantages/advantages.food.svg" width="73" height="70" alt="иконка бургера">
@@ -138,34 +148,38 @@
             </div>
           </li>
 
-          <li class="advantages-item-block">
-            <h3 class="advantages-title">
-              Небольшая площадь
-            </h3>
-            <span>-№3-</span>
-            <p class="advantages-description">
-              Все достопримечательности находятся очень близко
-            </p>
-          </li>
+          <li >
+            <ol class="advantages-item">
+              <li class="advantages-item-block">
+                <h3 class="advantages-title">
+                  Небольшая площадь
+                </h3>
+                <span>-№3-</span>
+                <p class="advantages-description">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </li>
 
-          <li class="advantages-item-block advantages-difference">
-            <h3 class="advantages-title">
-              Красивая дорога
-            </h3>
-            <span>-№4-</span>
-            <p class="advantages-description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
-          </li>
+              <li class="advantages-item-block advantages-difference">
+                <h3 class="advantages-title">
+                  Красивая дорога
+                </h3>
+                <span>-№4-</span>
+                <p class="advantages-description">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </li>
 
-          <li class="advantages-item-block">
-            <h3 class="advantages-title">
-              Мало туристов
-            </h3>
-            <span>-№5-</span>
-            <p class="advantages-description">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
+              <li class="advantages-item-block">
+                <h3 class="advantages-title">
+                  Мало туристов
+                </h3>
+                <span>-№5-</span>
+                <p class="advantages-description">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </li>
+            </ol>
           </li>
         </ol>
       </section>
@@ -240,6 +254,6 @@
 
     </footer>
 
-
+    </div>
   </body>
 </html>

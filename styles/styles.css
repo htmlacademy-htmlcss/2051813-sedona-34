@@ -14,12 +14,29 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #242424;
   background-color:#FFFFFF;
+}
+
+.container{
+  margin:0 auto;
+  width: 1200px;
+}
+
+.main-container{
+  flex-grow: 1;
 }
 
 .page-header{
@@ -29,13 +46,40 @@ body{
   text-align: center;
 }
 
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin:0 auto;
+}
+
+.navigation-logo{
+  max-width: 139;
+  margin-right: auto;
+}
+
+.navigation-list{
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user{
+  max-width: 300px;
+  margin-left: auto;
+}
+
 .page-header a{
   color:#242424;
   text-decoration: none;
 }
 
 .main-index{
-  text-align: center;
+ text-align: center;
+}
+
+.main-logo{
+  display: block;
+  margin: 0 auto;
 }
 
 .main-header-image{
@@ -44,6 +88,8 @@ body{
   background-repeat: no-repeat;
 }
 
+
+
 .main-header-text h1{
   text-transform: uppercase;
   font-weight: 700;
@@ -51,11 +97,20 @@ body{
   line-height: 36px;
 }
 
+.advantages-list{
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-title{
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.advantages-item{
+  display: flex;
 }
 
 .convenience-title{
@@ -66,11 +121,24 @@ body{
 }
 
 .advantages-block{
+  width: 400px;
   background: #82B3D3;
+}
+
+.convenience{
+  display: flex;
+}
+
+.convenience-item{
+  width: 400px;
 }
 
 .convenience-item:not(:nth-child(2)){
   background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-block{
+  width: 400px;
 }
 
 .advantages-item-block{
