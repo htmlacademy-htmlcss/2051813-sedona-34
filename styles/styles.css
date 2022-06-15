@@ -27,7 +27,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #242424;
-  background-color:#FFFFFF;
+  background-color:#F2F2F2;
 }
 
 .visually-hidden {
@@ -44,6 +44,7 @@ body{
 .container{
   margin:0 auto;
   width: 1200px;
+  background-color: #ffffff;
 }
 
 .main-container{
@@ -321,18 +322,24 @@ body{
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  height: 403px;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title{
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadcrumbs{
   display: flex;
   width: 110;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .breadcrumbs-link{
@@ -340,6 +347,11 @@ body{
   font-size: 16px;
   color:#FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs .breadcrumbs-link{
+  min-width:12px;
+  min-height: 12px;
 }
 
 .hotel-filter{
@@ -383,15 +395,30 @@ body{
 
 .sorting{
   display: flex;
-  margin: 0 auto;
   width: 1056px;
+  margin: 60px 70px;
 }
 
-.catalog-show h2{
+.select-control{
+  width: 290px;
+  height: 50px;
+  margin-right: 78px;
+}
+
+.sorting h2{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 190px;
+}
+
+.sorting .button{
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  background-color:  #000000;
 }
 
 .container-hotel-list{
@@ -424,6 +451,8 @@ body{
 }
 
 .pagination-link{
+  display: block;
+  box-sizing: border-box;
   color: #FFFFFF;
   background: #82B3D3;
   text-decoration: none;
@@ -431,12 +460,59 @@ body{
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  padding: 10px 10px;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+}
+
+.pagination-container {
+  display: flex;
+}
+
+.pagination{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child){
+  margin-right: 8px;
+}
+
+.select-control{
+  margin-left: auto;
 }
 
 .catalog-newsletter{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+}
+
+.catalog-newsletter{
+  color: #000000;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 94px 200px;
+}
+
+.catalog-newsletter h2{
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.catalog-newsletter p{
+  margin:0;
+  margin-bottom: 46px;
+}
+
+.newsletter-button{
+  text-transform: uppercase;
+  background: #82B3D3;
 }
 
 
