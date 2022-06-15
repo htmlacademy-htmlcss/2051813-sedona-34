@@ -158,23 +158,23 @@
       </section>
 
       <section class="catalog-show">
-        <div class="sortind">
+        <div class="sorting">
           <h2> найдено гостиниц:38 </h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap"> Сначала дешёвое</option>
-          <option value="popular">Сначала популярное </option>
-          <option value="expensive"> Сначала дорогое </option>
-        </select>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap"> Сначала дешёвое</option>
+            <option value="popular">Сначала популярное </option>
+            <option value="expensive"> Сначала дорогое </option>
+          </select>
 
-        <a class="button" href="#">
-          <span class="visually-hidden"> Показать карточки </span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden"> Показать слайд</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden"> Показать список</span>
-        </a>
+          <a class="button" href="#">
+            <span class="visually-hidden"> Показать карточки </span>
+          </a>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden"> Показать слайд</span>
+          </a>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden"> Показать список</span>
+          </a>
         </div>
 
         <div class="container-hotel-list">
@@ -250,33 +250,35 @@
           </ul>
         </div>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-      </section>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
 
-      <select class="select-control" aria-label="Колличество гостиниц на странице">
-        <label >Гостиниц на странице:
-        <option value="four" > 4 </option>
-        </label>
-      </select>
+          <select class="select-control" aria-label="Колличество гостиниц на странице">
+            <label>Гостиниц на странице:
+            <option value="four" > 4 </option>
+            </label>
+          </select>
+        </div>
+      </section>
 
       <section class="catalog-newsletter">
         <h2 class="page-newsletter-title">
@@ -294,45 +296,45 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">
+            Мы в социальных сетях
+          </h2>
 
-      <section class="footer-social">
-        <h2 class="visually-hidden">
-          Мы в социальных сетях
-        </h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href=" https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
 
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href=" https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
 
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Телефон</h2>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
 
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Телефон</h2>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
-
-      <section class="footer-logo">
-        <h2 class="visually-hidden">Логотип html.academy</h2>
-        <a class="footer-logo-html" href="https://htmlacademy.ru/">
-          <img  src="images/logo/Logo.html.academy.svg" width="115" height="34" alt="Логотип онлайн школы html.academy">
-        </a>
-      </section>
-
+        <section class="footer-logo">
+          <h2 class="visually-hidden">Логотип html.academy</h2>
+          <a class="footer-logo-html" href="https://htmlacademy.ru/">
+            <img  src="images/logo/Logo.html.academy.svg" width="115" height="34" alt="Логотип онлайн школы html.academy">
+          </a>
+        </section>
+      </div>
     </footer>
     </div>
   </body>
