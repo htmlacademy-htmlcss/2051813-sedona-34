@@ -322,7 +322,6 @@ body{
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: 403px;
   padding: 35px 70px 70px 70px;
 }
 
@@ -368,6 +367,7 @@ body{
 .catalog-filter-house{
   width: 146;
   margin-right: 175px;
+
 }
 
 .catalog-filter-price{
@@ -383,6 +383,10 @@ body{
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+
+.catalog-filter-list{
+  list-style-type: none;
 }
 
 .button{
