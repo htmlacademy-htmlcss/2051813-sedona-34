@@ -75,14 +75,14 @@ body{
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link{
-  background-image: url('/images/search.svg');
+  background-image: url('../images/search.svg');
   background-repeat: no-repeat;
   background-position: center;
   padding: 24px 12px;
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link{
-  background-image: url('/images/favourites.svg');
+  background-image: url('../images/favourites.svg');
   background-repeat: no-repeat;
   background-position: center;
   padding: 24px 12px;
@@ -280,12 +280,25 @@ body{
 
 .newsletter h2{
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .newsletter p{
   margin:0;
   margin-bottom: 46px;
+}
+
+.newsletter-form{
+  display:flex;
+  height: 60px;
+}
+
+.field{
+  width: 600px;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+  padding-left: 22px;
+  font-size: 18px;
 }
 
 .page-newsletter-title{
@@ -295,9 +308,14 @@ body{
   line-height: 36px;
 }
 
-.newsletter-button{
+.newsletter .newsletter-button{
   text-transform: uppercase;
   background: #82B3D3;
+  color:#FFFFFF;
+  margin: 0;
+  border: 0;
+  border-radius: 0px 10px 10px 0px;
+  width: 200px;
 }
 
 /*Футер*/
@@ -326,19 +344,22 @@ body{
   height: 40px;
 }
 
-.button-vk{
-  background-image: url(../images/logo/logo.vk.svg);
+ .footer-social .button-vk{
+  background-image: url('../images/logo/logo.vk.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-telegram{
-  background-image: url(../images/logo/logo.telegram.svg);
+  background-image: url('../images/logo/logo.telegram.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-youtube{
-  background-image: url(../images/logo/logo.you-tube.svg);
+  background-image: url('../images/logo/logo.you-tube.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-contacts-phone{
@@ -435,6 +456,9 @@ body{
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .sorting{
@@ -509,6 +533,7 @@ body{
 
 .hotel-list button{
   background: #82B3D3;
+  color: #FFFFFF;
   padding: 0;
   padding: 8px;
   width: 140px;
@@ -528,9 +553,14 @@ body{
   height: 36px;
   margin-right: 20px;
   margin-bottom: 16px;
-  padding-top:8px  ;
+  padding:8px  15px;
   background: #756157;
+  color: #FFFFFF;
   text-transform: uppercase;
+}
+
+.hotel-card:nth-child(2) .button:nth-of-type(1){
+  background: #7DB54F;
 }
 
 .type-hotel{
@@ -552,8 +582,11 @@ body{
 }
 
 .rating{
-  padding: 8px 32px;
+  padding: 8px 22px;
   background: #F2F2F2;
+  box-sizing: border-box;
+  width: 140px;
+  border-radius: 4px;
 }
 
 .pagination-link{
@@ -572,7 +605,7 @@ body{
   height: 60px;
 }
 
-.pagination-container {
+.pagination-container{
   display: flex;
   margin-left: 70px;
 }
@@ -590,14 +623,12 @@ body{
 
 .select-control{
   margin-left: auto;
+  border-radius: 4px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  font-size: 18px;
 }
 
-.catalog-newsletter{
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
 
 .catalog-newsletter{
   color: #000000;
@@ -605,6 +636,11 @@ body{
   font-size: 22px;
   line-height: 26px;
   margin: 94px 200px;
+  text-align: center;
+}
+
+.catalog-newsletter .newsletter-form .field{
+  background-color:#F2F2F2 ;
 }
 
 .catalog-newsletter h2{
@@ -620,6 +656,9 @@ body{
 .newsletter-button{
   text-transform: uppercase;
   background: #82B3D3;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+  width: 200px;
 }
 
 
