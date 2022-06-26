@@ -71,7 +71,7 @@ body{
   margin: 0;
   padding: 0;
   list-style-type: none;
-
+  margin-left: 187px;
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link{
@@ -104,13 +104,16 @@ body{
   border-radius: 4px;
 }
 
-
+.logo{
+  position:absolute;
+}
 
 .navigation-logo{
   display: flex;
   max-width: 140px;
   padding: 0;
-  margin: 0px 30px 0px 70px;
+  margin-top: 0;
+  margin-left: 70px;
   list-style-type: none;
 }
 
@@ -146,10 +149,18 @@ body{
 }
 
 .main-header-image{
-  background-image: url(../images/index-background.jpg);
+  background-image: url('../images/index-background.jpg');
   height: 485px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.decoration{
+  background-image:url('../images/Vektor.svg') ;
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  bottom: 75px;
 }
 
 .main-logo{
@@ -254,15 +265,15 @@ body{
 }
 
 .hotel-search .button-hotel-search{
+  display: flex;
   font-size: 20px;
   color: #FFFFFF;
   background: #756157;
   padding: 12px 15px;
   width: 574px;
   height: 60px;
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 
@@ -420,33 +431,66 @@ body{
 }
 
 .catalog-filter-infrastructure{
-  width: 151px;
-  margin-right: 70px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+ margin-right: 70px;
 }
 
 .catalog-filter-house{
-  width: 146;
+  width: 146px;
+  margin: 0;
   margin-right: 175px;
-
+  padding: 0;
+  border: 0;
 }
 
 .catalog-filter-price{
   width: 289px;
   margin-right: 70px;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
 }
 
 .catalog-filter-button{
   width: 160px;
+  margin-top: 60px;
+}
+
+.catalog-filter-button .button{
+  width: 160px;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+}
+
+.catalog-filter-button .button:nth-child(1){
+  background: #82B3D3;
+  color: #FFFFFF;
+}
+
+.catalog-filter-button .button:nth-child(2){
+  color: #FFFFFF;
+  background-color: transparent
 }
 
 .catalog-filter-title{
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.catalog-filter-item:not(:last-child){
+  margin-bottom: 15px;
 }
 
 .catalog-filter-list{
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .button{
