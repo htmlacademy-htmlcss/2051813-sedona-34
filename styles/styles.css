@@ -355,7 +355,11 @@ body{
   height: 40px;
 }
 
- .footer-social .button-vk{
+.footer-social-link{
+  display: block;
+}
+
+ .button-vk{
   background-image: url('../images/logo/logo.vk.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -416,12 +420,21 @@ body{
   font-weight: 400;
   font-size: 16px;
   color:#FFFFFF;
-  text-decoration: none;
-}
-
-.breadcrumbs .breadcrumbs-link{
   min-width:12px;
   min-height: 12px;
+}
+
+
+.breadcrumbs-item{
+  display: flex;
+}
+
+.breadcrumbs li:nth-child(1) {
+  background-image: url('../images/breadcrubs-house.svg');
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
 }
 
 .hotel-filter{
@@ -452,6 +465,7 @@ body{
   padding: 0;
   margin: 0;
   margin-right: 70px;
+  border: 0;
 }
 
 .catalog-filter-button{
@@ -483,6 +497,18 @@ body{
   margin-bottom: 30px;
 }
 
+.range-input{
+  width: 144px;
+  height: 48px;
+  font-size: 18px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 20px;
+  background-color: transparent;
+}
+
 .catalog-filter-item:not(:last-child){
   margin-bottom: 15px;
 }
@@ -491,6 +517,18 @@ body{
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.catalog-filter-list-price{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.control-input-price{
+  width: 288px;
 }
 
 .button{
@@ -503,6 +541,7 @@ body{
   border: 0;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .sorting{
@@ -530,7 +569,20 @@ body{
   width: 48px;
   height: 48px;
   margin-right: 8px;
-  background-color:  #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sorting a:nth-of-type(1){
+  background-image: url('../images/sorting-1.svg');
+}
+
+.sorting a:nth-of-type(2){
+  background-image: url('../images/sorting-2.svg');
+}
+
+.sorting a:nth-of-type(3){
+  background-image: url('../images/sorting-3.svg');
 }
 
 .container-hotel-list{
@@ -673,6 +725,19 @@ body{
   font-size: 18px;
 }
 
+.pagination-container .select-control{
+  width: 160px;
+  margin-right: 70px;
+  margin-left: 50px;
+}
+
+.label-select-control{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-left: auto;
+}
+
 
 .catalog-newsletter{
   color: #000000;
@@ -703,6 +768,7 @@ body{
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
   width: 200px;
+  cursor: pointer;
 }
 
 

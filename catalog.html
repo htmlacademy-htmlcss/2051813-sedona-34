@@ -68,7 +68,7 @@
           </h1>
           <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link  " href="index.html">
+            <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">
                  Главная
               </span>
@@ -139,15 +139,28 @@
           <fieldset class="catalog-filter-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list-price">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label>
+                  <input class="range-input" type="namber" value="0">
                   <span>от</span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label>
+                  <input class="range-input" type="namber" value="900">
                   <span>до</span>
-                  <input class="control-input" type="range" name="price" min="0" max="9000" value="#">
                 </label>
               </li>
             </ul>
+
+            <div>
+              <label class="control">
+                <input class="control-input-price" type="range" name="price" min="0" max="9000" value="#">
+              </label>
+            </div>
+
           </fieldset>
 
           <div class="catalog-filter-button">
@@ -288,10 +301,9 @@
             </li>
           </ul>
 
+          <label class="label-select-control" for="choice">Гостиниц на странице:</label>
           <select class="select-control" aria-label="Колличество гостиниц на странице">
-            <label>Гостиниц на странице:
-            <option value="four" > 4 </option>
-            </label>
+            <option value="four" name="choice"> 4 </option>
           </select>
         </div>
       </section>
@@ -320,19 +332,19 @@
 
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href=" https://vk.com/htmlacademy">
+              <a class="footer-social-link button button-vk" href=" https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
 
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="footer-social-link button button-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
 
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
