@@ -387,21 +387,45 @@ body{
 }
 
  .button-vk{
-  background-image: url('../images/logo/logo.vk.svg');
+  display: block;
+  width: 24px;
+  height: 14px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 13px 12px;
+  fill:#83B3D3;
 }
 
 .button-telegram{
-  background-image: url('../images/logo/logo.telegram.svg');
+  display: block;
+  width: 18px;
+  height: 15px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 12px 15px;
+  fill:#83B3D3;
 }
 
 .button-youtube{
-  background-image: url('../images/logo/logo.you-tube.svg');
+  display: block;
+  width: 22px;
+  height: 17px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 12px 13px;
+  fill:#83B3D3;
+}
+
+.footer-social-list .button:hover{
+  fill:#68A2CA;
+}
+
+.footer.footer-social-list .button:focus{
+  fill:#68A2CA;
+}
+
+.footer-social-list .button:active{
+  fill:rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-phone{
@@ -532,7 +556,7 @@ body{
   background: #68A2CA;
 }
 
-catalog-filter-button .button:nth-child(1):active{
+.catalog-filter-button .button:nth-child(1):active{
   color: rgba(255, 255, 255, 0.3);
   background: #82B3D3;
 }
