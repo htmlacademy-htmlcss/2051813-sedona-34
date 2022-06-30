@@ -164,7 +164,8 @@ body{
   background-repeat: no-repeat;
 }
 
-.decoration{
+.main-header-image::before{
+  content: " ";
   background-image:url('../images/Vektor.svg') ;
   width: 1200px;
   height: 57px;
