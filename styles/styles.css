@@ -74,6 +74,17 @@ body{
   margin-left: 187px;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  right: 950px;
+  bottom: 556px;
+  left: 330px;
+  height: 4px;
+  background-color: #756257;
+  content: "";
+
+}
+
 .navigation-user .navigation-item:nth-child(1) .navigation-link{
   background-image: url('../images/search.svg');
   background-repeat: no-repeat;
@@ -170,7 +181,7 @@ body{
   width: 1200px;
   height: 57px;
   position: absolute;
-  bottom: 75px;
+  bottom: 58px;
 }
 
 .main-logo{
