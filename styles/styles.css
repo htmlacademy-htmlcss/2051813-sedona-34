@@ -43,7 +43,7 @@ body{
 
 .container{
   margin:0 auto;
-  width: 1280px;
+  width: 1200px;
   background-color: #ffffff;
 }
 
@@ -74,15 +74,28 @@ body{
   margin-left: 187px;
 }
 
+.navigation-link-current{
+  position: relative;
+}
+
 .navigation-link-current::before {
   position: absolute;
-  right: 950px;
-  bottom: 556px;
-  left: 330px;
+  right: 0;
+  bottom: -3px;
+  left: 0;
   height: 4px;
   background-color: #756257;
   content: "";
+  z-index: 2;
+}
 
+.navigation ul:nth-child(2) .navigation-item{
+  margin-top: 20px;
+  margin-right: 34px;
+}
+
+.navigation-item{
+  display: flex;
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link{
@@ -117,6 +130,7 @@ body{
 
 .logo{
   position:absolute;
+  z-index: 1;
 }
 
 .navigation-logo{
@@ -130,8 +144,7 @@ body{
 
 .navigation-link{
   display: block;
-  padding-right:34px;
-  padding-top: 20px;
+
 }
 
 .navigation-user{
@@ -173,6 +186,7 @@ body{
   height: 485px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .main-header-image::before{
@@ -180,7 +194,7 @@ body{
   width: 1200px;
   height: 57px;
   position: absolute;
-  bottom: 58px;
+  bottom: 0px;
   left: 0px;
 }
 
