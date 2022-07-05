@@ -142,14 +142,14 @@
             <ul class="catalog-filter-list-price">
               <li class="catalog-filter-item">
                 <label>
-                  <input class="range-input" type="namber" value="0">
+                  <input class="range-input" type="number" value="0">
                   <span>от</span>
                 </label>
               </li>
 
               <li class="catalog-filter-item">
                 <label>
-                  <input class="range-input" type="namber" value="900">
+                  <input class="range-input" type="number" value="900">
                   <span>до</span>
                 </label>
               </li>
@@ -207,10 +207,10 @@
                 <a class="hotel-card-button button" href="#"> Подробнее </a>
                 <button class="button" type="submit"> В избранное </button>
                 <ul class="star">
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li ><img src="images/star.svg"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li ><img src="images/star.svg" alt="звезда"></li>
                 </ul>
                 <span class="rating ">Рейтинг:8,5</span>
               </div>
@@ -229,10 +229,10 @@
                 <a class="hotel-card-button button" href="#">Подробнее</a>
                 <button class="button" type="submit">В избранном</button>
                 <ul class="star">
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li ><img src="images/star.svg"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li ><img src="images/star.svg" alt="звезда"></li>
                 </ul>
                 <span class="rating">Рейтинг:9,2</span>
               </div>
@@ -251,9 +251,9 @@
                 <a class="hotel-card-button button" href="#">Подробнее</a>
                 <button class="button" type="submit">В избранное</button>
                 <ul class="star">
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li ><img src="images/star.svg"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li ><img src="images/star.svg" alt="звезда"></li>
                 </ul>
                 <span class="rating">Рейтинг:6,9</span>
               </div>
@@ -272,8 +272,8 @@
                 <a class="hotel-card-button button" href="#">Подробнее</a>
                 <button class="button" type="submit">В избранное</button>
                 <ul class="star">
-                  <li class="single-star"><img src="images/star.svg"></li>
-                  <li ><img src="images/star.svg"></li>
+                  <li class="single-star"><img src="images/star.svg" alt="звезда"></li>
+                  <li ><img src="images/star.svg" alt="звезда"></li>
                 </ul>
                 <span class="rating">Рейтинг:5,0</span>
               </div>
@@ -305,7 +305,7 @@
 
           <label class="label-select-control" for="choice">Гостиниц на странице:</label>
           <select class="select-control" aria-label="Колличество гостиниц на странице">
-            <option value="four" name="choice"> 4 </option>
+            <option value="four" id="choice"> 4 </option>
           </select>
         </div>
       </section>
@@ -318,7 +318,6 @@
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
           <button class="button newsletter-button" type="button" >подписаться</button>
         </form>
