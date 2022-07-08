@@ -601,7 +601,6 @@ body{
 }
 
 .field-group{
-
   margin: 0;
 }
 
@@ -645,21 +644,15 @@ body{
 }
 
 .field-date{
+  position: relative;
   width: 420px;
   height: 50px;
   padding: 14px 19px;
   grid-column: 2/5;
   border-radius: 4px;
-}
-
-.field-date::before{
-  position: absolute;
-  content: "";
   background-image: url(../images/calendar.svg) ;
-  width: 15px;
-  height: 15px;
-  right: 18px;
-  top:18px;
+  background-repeat: no-repeat;
+  background-position: right 19px center;
 }
 
 .field-adults{
@@ -707,9 +700,9 @@ body{
   color:rgba(255, 255, 255, 0.3)
 }
 
-.modal-container-close{
+/*.modal-container-close{
   display: none;
-}
+}*/
 
 
 /*Каталог*/
