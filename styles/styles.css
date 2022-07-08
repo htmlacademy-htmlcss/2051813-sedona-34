@@ -497,12 +497,12 @@ body{
   width: 332px;
 }
 
-.newsletter-button:hover{
-  background-color: #68A2CA;
+.footer-contacts-phone:hover{
+  color: #756157;
 }
 
-.newsletter-button:focus{
-  background-color: #68A2CA;
+.footer-contacts-phone:focus{
+  color: #756157;
 }
 
 .footer-contacts-phone:active{
@@ -525,6 +525,156 @@ body{
 .logo-html:active{
   fill: rgba(117, 97, 87, 0.3);
 }
+
+/*Модальное окно*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(242, 242, 242, 0.8);
+  z-index: 3;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+
+.modal-auth{
+  width: 715px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 63px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  background-image: url(../images/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover{
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus{
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;;
+}
+
+.modal-close-button:active{
+  background-color: #E6E6E6;
+}
+
+.auth-form{
+  display: grid;
+  row-gap: 40px;
+  width: 575px;
+  height: 230px;
+  grid-template-columns: 143px 143px 143px 143px;
+  grid-template-rows: 50px 50px 50px ;
+  margin-bottom: 40px;
+}
+
+.field-group{
+
+  margin: 0;
+}
+
+.field-title{
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+  align-self: center;
+}
+
+.auth-form .field-title:last-of-type{
+  justify-self: center;
+}
+
+.field{
+  position: relative;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field-date{
+  width: 420px;
+  height: 50px;
+  padding: 14px 19px;
+  grid-column: 2/5;
+}
+
+.field-adults{
+  width: 133px;
+  grid-column: 2/3;
+  grid-row: 3/-2;
+}
+
+.field-children{
+  width: 133px;
+  grid-column: 4/5;
+}
+
+ .modal-search-button{
+  width: 575px;
+  height: 60px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 20px;
+  border-radius:10px ;
+  border: none;
+  text-transform: uppercase;
+}
+
+.modal-search-button:hover{
+  background: #68A2CA;
+}
+
+.modal-search-button:focus{
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.modal-search-button:active{
+  background: #68A2CA;
+  /*opacity: 0.3;*/
+}
+
 
 /*Каталог*/
 .catalog-hotel{
