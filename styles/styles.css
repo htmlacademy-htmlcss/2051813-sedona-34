@@ -877,7 +877,7 @@ body{
   height: 48px;
   font-size: 18px;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  border: 2px  solid #FFFFFF;
   box-sizing: border-box;
   padding: 14px 20px;
   background-color: rgba(255,255,255,0);
@@ -896,6 +896,7 @@ body{
 }
 
  .input-price-left{
+  border-right: 1px;
   border-radius: 4px 0px 0px 4px;
 }
 
