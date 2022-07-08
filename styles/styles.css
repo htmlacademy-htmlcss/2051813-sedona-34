@@ -879,13 +879,53 @@ body{
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;
   padding: 14px 20px;
-  background-color: transparent;
+  background-color: rgba(255,255,255,0);
+}
+
+.range-input:hover{
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus{
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.range-input:active{
+  background-color:  #756257;;
+}
+
+ .input-price-left{
+  border-radius: 4px 0px 0px 4px;
+}
+
+.input-price-right{
+  border-radius: 0px 4px 4px 0px;
+}
+
+.range-input:focus-visible{
+  outline: none;
+}
+
+.catalog-filter-item{
+  position: relative;
+}
+
+.catalog-filter-list-price span{
+  position: absolute;
+  content: "";
+  right: 14px;
+  top:12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
 }
 
 .catalog-filter-item:not(:last-child){
-  margin-bottom: 15px;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list{
@@ -915,11 +955,54 @@ body{
   border: 3px solid #83B3D3;
 }
 
-
-
 .control-input-price{
   width: 288px;
 }
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(255, 255, 255);
+  right: 60px;
+  left: 0px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+
+.range-toggle:focus{
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active{
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
 
 .button{
   font-weight: 700;
@@ -941,6 +1024,7 @@ body{
 }
 
 .sorting .select-control{
+  position: relative;
   width: 290px;
   height: 50px;
   margin-right: 78px;
@@ -949,18 +1033,10 @@ body{
   border-radius: 4px;
   padding: 14px 20px;
   font-size: 18px;
-}
-
-.select-control:hover{
-  border: 2px solid #68A2CA;
-}
-
-.select-control:focus{
-  border: 2px solid #68A2CA;
-}
-
-.select-control:active{
-  border: 2px solid #3F5E72;
+  appearance: none;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .sorting h2{
@@ -1214,6 +1290,28 @@ body{
   margin-right: 70px;
   margin-left: 50px;
   padding:14px 20px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  appearance: none;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.select-control:hover{
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus{
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active{
+  border: 2px solid #3F5E72;
+}
+
+.select-control:focus-visible{
+  outline: none;
 }
 
 .label-select-control{

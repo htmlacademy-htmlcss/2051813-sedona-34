@@ -145,24 +145,25 @@
 
             <ul class="catalog-filter-list-price">
               <li class="catalog-filter-item">
-                <label>
-                  <input class="range-input" type="number" value="0">
+                <label >
+                  <input class="range-input input-price-left" type="number" value="0">
                   <span>от</span>
                 </label>
               </li>
 
               <li class="catalog-filter-item">
                 <label>
-                  <input class="range-input" type="number" value="900">
+                  <input class="range-input input-price-right" type="number" value="900">
                   <span>до</span>
                 </label>
               </li>
             </ul>
 
-            <div>
-              <label class="control">
-                <input class="control-input-price" type="range" name="price" min="0" max="9000" >
-              </label>
+            <div class="range-scale">
+              <div class="range-bar">
+                <button class="range-toggle toggle-min" type="button"></button>
+                <button class="range-toggle toggle-max" type="button"></button>
+              </div>
             </div>
 
           </fieldset>
