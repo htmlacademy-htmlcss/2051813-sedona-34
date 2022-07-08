@@ -45,6 +45,7 @@ body{
   margin:0 auto;
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 
 .main-container{
@@ -547,11 +548,6 @@ body{
   border-radius: 30px;
 }
 
-
-.modal-auth{
-  width: 715px;
-}
-
 .modal-title {
   margin: 0;
   margin-bottom: 63px;
@@ -574,7 +570,7 @@ body{
   background-color: #F2F2F2;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/cross.svg);
+  fill:#000000;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -591,6 +587,7 @@ body{
 
 .modal-close-button:active{
   background-color: #E6E6E6;
+  fill: rgba(0,0,0,0.3)
 }
 
 .auth-form{
@@ -625,8 +622,26 @@ body{
 .field{
   position: relative;
   background-color: #F2F2F2;
-  border-radius: 4px;
   box-sizing: border-box;
+}
+
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.field:hover{
+  background-color: #E6E6E6;
+}
+
+.field:focus{
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.field:active{
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
 }
 
 .field-date{
@@ -634,17 +649,34 @@ body{
   height: 50px;
   padding: 14px 19px;
   grid-column: 2/5;
+  border-radius: 4px;
+}
+
+.field-date::before{
+  position: absolute;
+  content: "";
+  background-image: url(../images/calendar.svg) ;
+  width: 15px;
+  height: 15px;
+  right: 18px;
+  top:18px;
 }
 
 .field-adults{
   width: 133px;
   grid-column: 2/3;
   grid-row: 3/-2;
+  padding: 0;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .field-children{
   width: 133px;
   grid-column: 4/5;
+  padding: 0;
+  text-align: center;
+  border-radius: 4px;
 }
 
  .modal-search-button{
@@ -672,7 +704,11 @@ body{
 
 .modal-search-button:active{
   background: #68A2CA;
-  /*opacity: 0.3;*/
+  color:rgba(255, 255, 255, 0.3)
+}
+
+.modal-container-close{
+  display: none;
 }
 
 
@@ -708,19 +744,44 @@ body{
   color:#FFFFFF;
   min-width:12px;
   min-height: 12px;
+  fill:#FFFFFF;
 }
 
+.breadcrumbs-link:hover{
+  color: rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus{
+  color:#FFFFFF;
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-link:active{
+  color: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.3);
+}
 
 .breadcrumbs-item{
   display: flex;
 }
 
 .breadcrumbs li:nth-child(1) {
-  background-image: url('../images/breadcrubs-house.svg');
+  position: relative;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 10px;
+  margin-right: 25px;
+}
+
+.breadcrumbs li:nth-child(1)::before{
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 9px;
+  background-image: url(../images/breadcrumbs-arrow.svg) ;
+  left: 22px;
+  bottom: 6px;
 }
 
 .hotel-filter{
