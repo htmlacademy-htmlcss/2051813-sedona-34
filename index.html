@@ -273,20 +273,53 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form">
+            <ul class="field-auth-form">
 
-              <label class="field-title" for="date-arrival">Дата заезда:</label>
-              <input class="field field-date" id="date-arrival" type="text" placeholder="Укажите дату">
+              <li class="field-list">
+                <label class="field-title" for="date-arrival">Дата заезда:</label>
+                <input class="field field-date" id="date-arrival" type="text" placeholder="Укажите дату">
+              </li>
 
-              <label class="field-title" for="date-departure">Дата выезда:</label>
-              <input class="field field-date" id="date-departure" type="text" placeholder="Укажите дату">
+              <li class="field-list">
+                <label class="field-title" for="date-departure">Дата выезда:</label>
+                <input class="field field-date" id="date-departure" type="text" placeholder="Укажите дату">
+              </li>
 
-              <label class="field-title">Взрослые:</label>
-              <input class="field field-adults" type="number" value="2">
+              <li class="field-list field-list-adult">
+                <label class="field-title">Взрослые:</label>
+                <input class="field field-adults" type="number" value="2">
+                <button class="field-plus">
+                  <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                    </g>
+                    </svg>
+                </button>
+                <button class="field-minus">
+                  <svg class="minus" width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                    </svg>
+                </button>
+              </li>
 
+              <li class="field-list field-list-children">
+                <label class="field-title">Дети:</label>
+                <input class="field field-children" type="number" value="1">
+                <button class="field-plus">
+                  <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                    </g>
+                    </svg>
+                </button>
+                <button class="field-minus">
+                  <svg class="minus" width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                    </svg>
+                </button>
+              </li>
 
-              <label class="field-title">Дети:</label>
-              <input class="field field-children" type="number" value="1">
-
+            </ul>
           </form>
 
           <button class=" modal-search-button" type="submit">Найти
