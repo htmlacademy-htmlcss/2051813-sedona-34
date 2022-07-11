@@ -713,6 +713,8 @@ body{
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 35px 70px 70px 70px;
+  box-sizing: border-box;
+  height: 403px;
 }
 
 .inner-header-title{
@@ -720,6 +722,7 @@ body{
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs{
@@ -729,6 +732,7 @@ body{
   padding: 0;
   margin-bottom: 40px;
   list-style-type: none;
+  margin-left: 2px;
 }
 
 .breadcrumbs-link{
@@ -919,7 +923,12 @@ body{
 }
 
 .catalog-filter-item:not(:last-child){
-  margin-bottom: 32px;
+  margin-bottom: 15px;
+}
+
+.catalog-filter-item-price{
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .catalog-filter-list{
@@ -998,6 +1007,7 @@ body{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 4px;
 }
 
 .control-input{
@@ -1079,7 +1089,7 @@ body{
 .sorting{
   display: flex;
   width: 1056px;
-  margin: 60px 70px;
+  margin: 57px 75px;
 }
 
 .sorting .select-control{
@@ -1104,15 +1114,19 @@ body{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 190px;
+  margin-right: 195px;
 }
 
 .sorting .button{
   width: 48px;
   height: 48px;
-  margin-right: 8px;
+
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.sorting .button:not(:last-child){
+  margin-right: 8px;
 }
 
 .sorting a:nth-of-type(1){
@@ -1161,11 +1175,11 @@ body{
 
 .hotel-card-image{
   display: block;
-  margin-left: 20px;
+  margin-left: 24px;
 }
 
 .hotel-card-content{
-  margin: 20px;
+  margin: 16px 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1177,6 +1191,9 @@ body{
 .hotel-card-title{
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .hotel-card-link{
@@ -1201,6 +1218,7 @@ body{
   display: flex;
   flex-direction: column;
   color:#333333;
+  margin-top: 18px;
 }
 
 .hotel-card-button{
@@ -1331,6 +1349,7 @@ body{
 .pagination-container{
   display: flex;
   margin-left: 70px;
+
 }
 
 .pagination{
@@ -1346,10 +1365,12 @@ body{
 
 .pagination-container .select-control{
   width: 160px;
+  height: 49px;
   margin-right: 70px;
   margin-left: 50px;
   padding:14px 20px;
   border-radius: 4px;
+  align-self: flex-end;
   border: 2px solid #E5E5E5;
   appearance: none;
   background-image: url(../images/arrow.svg);
@@ -1378,6 +1399,7 @@ body{
   align-items: center;
   height: 50px;
   margin-left: auto;
+  align-self:flex-end;
 }
 
 
@@ -1386,7 +1408,7 @@ body{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  margin: 94px 200px;
+  margin: 124px 200px 94px ;
   text-align: center;
 }
 
