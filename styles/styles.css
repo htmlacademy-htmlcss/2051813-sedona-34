@@ -590,6 +590,10 @@ body{
   fill: rgba(0,0,0,0.3)
 }
 
+.modal-content{
+  width: 575px;
+}
+
 .field-auth-form{
   position: relative;
   display: grid;
@@ -603,7 +607,7 @@ body{
 }
 
 .field-auth-form .field-list:nth-child(1){
-  grid-columns: 1/5 ;
+  grid-column: 1/5 ;
 }
 
 .field-auth-form .field-list:nth-child(2){
@@ -652,7 +656,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  left: 145px;
+  left: 155px;
   bottom: 150px;
 }
 
@@ -665,19 +669,27 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  left: 145px;
-  bottom: 65px;
+  left: 155px;
+  bottom: 60px;
 }
 
 .field{
   position: relative;
   background-color: #F2F2F2;
   box-sizing: border-box;
+  margin-left: 12px;
 }
 
 .field::-webkit-outer-spin-button,
 .field::-webkit-inner-spin-button{
   -webkit-appearance: none;
+}
+
+.field::placeholder{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
 }
 
 .field:hover{
@@ -706,14 +718,7 @@ body{
   background-position: right 19px center;
 }
 
-.field-adults{
-  width: 133px;
-  grid-column: 2/3;
-  padding: 0;
-  text-align: center;
-  border-radius: 4px;
-}
-
+.field-adults,
 .field-children{
   width: 133px;
   grid-column: 2/3;
@@ -722,19 +727,20 @@ body{
   border-radius: 4px;
 }
 
-.field-list-adult{
+.field-list-adult,
+.field-list-children{
   position: relative;
 }
 
-.field-list-children{
-  position: relative;
+.field-list-children .field-title{
+  margin-left: 20px;
 }
 
 .field-minus{
   position: absolute;
   content:"";
   top: 18px;
-  left: 162px;
+  left: 172px;
   border: none;
   padding: 0;
   fill: rgba(0, 0, 0, 0.6);
@@ -748,7 +754,7 @@ body{
   position: absolute;
   content:"";
   top: 18px;
-  left: 242px;
+  left: 257px;
   border: none;
   padding: 0;
   fill: rgba(0, 0, 0, 0.6);
@@ -799,9 +805,9 @@ body{
   color:rgba(255, 255, 255, 0.3)
 }
 
-/*.modal-container-close{
+.modal-container-close{
   display: none;
-}*/
+}
 
 
 /*Каталог*/
@@ -1608,7 +1614,7 @@ body{
 .tooltip {
   position: absolute;
   margin-top: 13px;
-  margin-left: 100px;
+  margin-left: 115px;
   width: 25px;
   height: 25px;
 }
