@@ -277,17 +277,17 @@
 
               <li class="field-list">
                 <label class="field-title" for="date-arrival">Дата заезда:</label>
-                <input class="field field-date" id="date-arrival" type="text" placeholder="Укажите дату">
+                <input class="field field-date" id="date-arrival" name="date-arrival" type="text" placeholder="Укажите дату">
               </li>
 
               <li class="field-list">
                 <label class="field-title" for="date-departure">Дата выезда:</label>
-                <input class="field field-date" id="date-departure" type="text" placeholder="Укажите дату">
+                <input class="field field-date" id="date-departure" name="date-departure" type="text" placeholder="Укажите дату">
               </li>
 
               <li class="field-list field-list-adult">
-                <label class="field-title">Взрослые:</label>
-                <input class="field field-adults" type="number" value="2">
+                <label class="field-title" for="adults">Взрослые:</label>
+                <input class="field field-adults" id="adults" name="adults" type="number" value="2">
                 <button class="field-plus">
                   <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
@@ -303,8 +303,29 @@
               </li>
 
               <li class="field-list field-list-children">
-                <label class="field-title">Дети:</label>
-                <input class="field field-children" type="number" value="1">
+                  <label class="field-title" for="children">Дети:</label>
+
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_33716_651)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                        <path d="M1 0H0V1H1V0Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_33716_651">
+                        <rect width="1" height="9" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip"  id="tooltip-label">
+                      Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+                    </span>
+                  </span>
+
+
+                <input class="field field-children" id="children" name="children" type="number" value="1">
                 <button class="field-plus">
                   <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
