@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/favicon.ico/favicon.png">
+    <link rel="icon" href="./favicon.ico/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -14,7 +14,7 @@
         <ul class="navigation-logo">
           <li class="navigation-item">
             <a  class="logo">
-              <img src="../images/logo/logo.sedona.svg" width="139"  height="70" alt="Логотип города Седона">
+              <img src="./images/logo/logo.sedona.svg" width="139"  height="70" alt="Логотип города Седона">
             </a>
           </li>
         </ul>
@@ -108,7 +108,7 @@
                   Жильё
                 </h3>
                 <p class="convenience-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  Рекомендуем пожить <br> в настоящем мотеле,<br> всё как в кино!
                 </p>
               </li>
 
@@ -119,7 +119,7 @@
                   Еда
                 </h3>
                 <p class="convenience-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                  Всегда заказывайте <br> топовый фирменный бургер,<br> вы не разочаруетесь!
                 </p>
               </li>
 
@@ -129,7 +129,7 @@
                   Сувениры
                 </h3>
                 <p class="convenience-description">
-                  Не только китайского, но и настоящего местного производства!
+                  Не только китайского,<br> но и настоящего местного <br> производства!
                 </p>
               </li>
             </ul>
@@ -141,7 +141,7 @@
 
             <div class="advantages-block">
               <h3 class="advantages-title">
-                Там есть мост дьявола
+                Там есть <br> мост дьявола
               </h3>
               <span>-№2-</span>
               <p class="advantages-description">
@@ -154,7 +154,7 @@
             <ol class="advantages-item">
               <li class="advantages-item-block">
                 <h3 class="advantages-title">
-                  Небольшая площадь
+                  Небольшая <br> площадь
                 </h3>
                 <span>-№3-</span>
                 <p class="advantages-description">
@@ -164,7 +164,7 @@
 
               <li class="advantages-item-block advantages-difference">
                 <h3 class="advantages-title">
-                  Красивая дорога
+                  Красивая <br> дорога
                 </h3>
                 <span>-№4-</span>
                 <p class="advantages-description">
@@ -174,7 +174,7 @@
 
               <li class="advantages-item-block">
                 <h3 class="advantages-title">
-                  Мало туристов
+                  Мало <br> туристов
                 </h3>
                 <span>-№5-</span>
                 <p class="advantages-description">
@@ -192,7 +192,7 @@
         </h2>
         <b>заинтересовались?</b>
         <p>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="button button-hotel-search" href="catalog.html">
           поиск гостиницы в седоне
@@ -268,6 +268,97 @@
       </div>
     </footer>
 
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form">
+            <ul class="field-auth-form">
+
+              <li class="field-list">
+                <label class="field-title" for="date-arrival">Дата заезда:</label>
+                <input class="field field-date" id="date-arrival" name="date-arrival" type="text" placeholder="27 апреля 2020">
+              </li>
+
+              <li class="field-list">
+                <label class="field-title" for="date-departure">Дата выезда:</label>
+                <input class="field field-date" id="date-departure" name="date-departure" type="text" placeholder="1 сентября 2021">
+              </li>
+
+              <li class="field-list field-list-adult">
+                <label class="field-title" for="adults">Взрослые:</label>
+                <input class="field field-adults" id="adults" name="adults" type="number" placeholder="2">
+                <button class="field-plus">
+                  <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                    </g>
+                    </svg>
+                </button>
+                <button class="field-minus">
+                  <svg class="minus" width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                    </svg>
+                </button>
+              </li>
+
+              <li class="field-list field-list-children">
+                  <label class="field-title" for="children">Дети:</label>
+
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_33716_651)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                        <path d="M1 0H0V1H1V0Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_33716_651">
+                        <rect width="1" height="9" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip"  id="tooltip-label">
+                      Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+                    </span>
+                  </span>
+
+                <input class="field field-children" id="children" name="children" type="number" placeholder="1">
+                <button class="field-plus">
+                  <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                    </g>
+                    </svg>
+                </button>
+                <button class="field-minus">
+                  <svg class="minus" width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                    </svg>
+                </button>
+              </li>
+
+            </ul>
+          </form>
+
+          <button class=" modal-search-button" type="submit">Найти
+            <span class="visually-hidden">Найти</span>
+          </button>
+
+        </section>
+
+        <button class="modal-close-button">
+          <svg  aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+
+
+      </div>
+    </div>
 
     </div>
   </body>
