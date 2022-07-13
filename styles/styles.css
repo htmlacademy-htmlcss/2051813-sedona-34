@@ -281,9 +281,13 @@ body{
   padding: 0;
 }
 
+.convenience-description{
+  margin: 0;
+}
+
 .convenience-item{
   width: 400px;
-  height: 384px;
+  /*height: 384px;*/
   padding:80px 85px;
   box-sizing: border-box;
 }
@@ -294,7 +298,7 @@ body{
 
 .advantages-item-block{
   width: 400px;
-  height: 384px;
+  /*height: 384px;*/
   padding: 102px 85px;
   box-sizing: border-box;
 }
@@ -332,9 +336,8 @@ body{
   font-size: 20px;
   color: #FFFFFF;
   background: #756157;
-  padding: 12px 15px;
+  padding: 20px 15px;
   width: 574px;
-  height: 60px;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -357,7 +360,7 @@ body{
   background: #000000;
   color: #FFFFFF;
   background-image: url(../images/background.email.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   font-weight: 400;
   font-size: 22px;
@@ -623,6 +626,7 @@ body{
 }
 
 .field-list{
+  position: relative;
   display: grid;
   grid-template-columns: 143px 429px;
   grid-template-rows: 50px;
@@ -633,7 +637,7 @@ body{
 }
 
 .field-title{
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -651,7 +655,7 @@ body{
   position: absolute;
   content: "Мы не можем отправить вас в прошлое.";
   color: #FF5757;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -664,7 +668,7 @@ body{
   position: absolute;
   content: "На эти даты есть свободные номера. Пока есть.";
   color: #333333;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -673,35 +677,37 @@ body{
   bottom: 60px;
 }
 
-.field{
+.field-modal-content{
   position: relative;
   background-color: #F2F2F2;
   box-sizing: border-box;
   margin-left: 12px;
+  border: 0;
+  font-size: 18px;
 }
 
-.field::-webkit-outer-spin-button,
-.field::-webkit-inner-spin-button{
+.field-modal-content::-webkit-outer-spin-button,
+.field-modal-content::-webkit-inner-spin-button{
   -webkit-appearance: none;
 }
 
-.field::placeholder{
-  font-family: 'PT Sans';
+.field-modal-content::placeholder{
+  font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 400;
   color: #000000;
 }
 
-.field:hover{
+.field-modal-content:hover{
   background-color: #E6E6E6;
 }
 
-.field:focus{
+.field-modal-content:focus{
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
 }
 
-.field:active{
+.field-modal-content:active{
   border: 2px solid #000000;
   background-color: #FFFFFF;
 }
@@ -713,9 +719,17 @@ body{
   padding: 14px 19px;
   grid-column: 2/3;
   border-radius: 4px;
+}
+
+.calendar{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: none;
   background-image: url(../images/calendar.svg) ;
   background-repeat: no-repeat;
-  background-position: right 19px center;
+  right: 17px;
+  top: 16px;
 }
 
 .field-adults,
@@ -817,9 +831,8 @@ body{
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 65px 70px;
   box-sizing: border-box;
-  height: 403px;
 }
 
 .inner-header-title{
@@ -841,12 +854,15 @@ body{
 }
 
 .breadcrumbs-link{
+  position: relative;
+  display: block;
   font-weight: 400;
   font-size: 16px;
   color:#FFFFFF;
   min-width:12px;
   min-height: 12px;
   fill:#FFFFFF;
+  margin-right: 25px;
 }
 
 .breadcrumbs-link:hover{
@@ -873,16 +889,15 @@ body{
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 25px;
 }
 
-.breadcrumbs li:nth-child(1)::before{
+.breadcrumbs-item:last-of-type .breadcrumbs-link::after{
   position: absolute;
   content: "";
   width: 5px;
   height: 9px;
   background-image: url(../images/breadcrumbs-arrow.svg) ;
-  left: 22px;
+  left: -14px;
   bottom: 6px;
 }
 
@@ -952,6 +967,8 @@ body{
   color: #FFFFFF;
   background-color: transparent;
   font-weight: 400;
+  padding-top: 18px;
+  text-transform: capitalize;
 }
 
 .catalog-filter-button .button:nth-child(2):hover{
@@ -977,11 +994,12 @@ body{
 .range-input{
   width: 144px;
   height: 48px;
+  font-family: "PT Sans", sans-serif; ;
   font-size: 18px;
   color: #FFFFFF;
   border: 2px  solid #FFFFFF;
   box-sizing: border-box;
-  padding: 14px 20px;
+  padding: 14px 16px;
   background-color: rgba(255,255,255,0);
 }
 
@@ -1058,16 +1076,16 @@ body{
   border-radius: 4px;
 }
 
-.control-mark:hover{
+.control-input:hover + .control-mark{
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark:focus{
+.control-input:focus + .control-mark{
   background: rgba(255, 255, 255, 0.6);
   border: 3px solid #83B3D3;
 }
 
-.control-mark:active{
+.control-input:active + .control-mark{
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1091,7 +1109,7 @@ body{
   border-radius: 50%;
 }
 
-.control-mark-hotel:focus{
+.control-input:focus + .control-mark-hotel{
   outline: 3px solid #83B3D3;
   outline-offset: -2px;
 }
@@ -1183,6 +1201,7 @@ body{
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
@@ -1194,7 +1213,7 @@ body{
 .sorting{
   display: flex;
   width: 1056px;
-  margin: 57px 75px;
+  margin: 52px 75px 56px;
 }
 
 .sorting .select-control{
@@ -1205,6 +1224,7 @@ body{
   border: 2px solid #E5E5E5;
   margin-left: auto;
   border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
   padding: 14px 20px;
   font-size: 18px;
   appearance: none;
@@ -1220,6 +1240,7 @@ body{
   text-transform: uppercase;
   margin: 0;
   margin-right: 195px;
+  align-self: center;
 }
 
 .sorting .button{
@@ -1297,7 +1318,7 @@ body{
 }
 
 .hotel-card-content{
-  margin: 16px 20px;
+  margin: 20px 16px 20px 24px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1418,6 +1439,8 @@ body{
   box-sizing: border-box;
   width: 140px;
   border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 .pagination-link{
@@ -1466,7 +1489,7 @@ body{
 
 .pagination-container{
   display: flex;
-  margin-left: 70px;
+  margin-left: 73px;
 
 }
 
@@ -1486,6 +1509,7 @@ body{
   height: 49px;
   margin-right: 70px;
   margin-left: 50px;
+  margin-bottom: 5px;
   padding:14px 20px;
   border-radius: 4px;
   align-self: flex-end;
@@ -1516,6 +1540,7 @@ body{
   display: flex;
   align-items: center;
   height: 50px;
+  margin-bottom: 5px;
   margin-left: auto;
   align-self:flex-end;
 }
@@ -1526,7 +1551,7 @@ body{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  margin: 124px 200px 94px ;
+  margin: 119px 200px 94px ;
   text-align: center;
 }
 
@@ -1548,6 +1573,7 @@ body{
   text-transform: uppercase;
   background: #82B3D3;
   color: #FFFFFF;
+  font-size: 20px;
   border-radius: 0px 10px 10px 0px;
   width: 200px;
   cursor: pointer;

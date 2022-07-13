@@ -14,7 +14,7 @@
         <ul class="navigation-logo">
           <li class="navigation-item">
             <a  class="logo">
-              <img src="./images/logo/logo.sedona.svg" width="139"  height="70" alt="Логотип города Седона">
+              <img src="./images/logo/logo.sedona.svg" width="139"  height="70" alt="Логотип города Седона.">
             </a>
           </li>
         </ul>
@@ -53,9 +53,9 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a  class="button navigation-link navigation-button">
+            <button  class="button navigation-link navigation-button">
               Хочу сюда!
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -97,13 +97,13 @@
               </p>
             </div>
 
-            <img class="advantages-item" src="images/advantages/advantages-1.jpg" width="800" height="384" alt="Переулок города Седона">
+            <img class="advantages-item" src="images/advantages/advantages-1.jpg" width="800" height="384" alt="Переулок города Седона.">
           </li>
 
           <li>
             <ul class="convenience">
               <li class="convenience-item">
-                <img src="images/advantages/advantages.home.svg" width="74" height="72" alt="иконка домика">
+                <img src="images/advantages/advantages.home.svg" width="74" height="72" alt="иконка домика.">
                 <h3 class="convenience-title">
                   Жильё
                 </h3>
@@ -114,7 +114,7 @@
 
 
               <li class="convenience-item">
-                <img src="images/advantages/advantages.food.svg" width="73" height="70" alt="иконка бургера">
+                <img src="images/advantages/advantages.food.svg" width="73" height="70" alt="иконка бургера.">
                 <h3 class="convenience-title">
                   Еда
                 </h3>
@@ -124,7 +124,7 @@
               </li>
 
               <li class="convenience-item">
-                <img src="images/advantages/advantages.souvenirs.svg" width="64" height="75" alt="иконка подарка">
+                <img src="images/advantages/advantages.souvenirs.svg" width="64" height="75" alt="иконка подарка.">
                 <h3 class="convenience-title">
                   Сувениры
                 </h3>
@@ -137,7 +137,7 @@
 
           <li class="advantages-item">
 
-            <img class="advantages-second-picture" src="images/advantages/advantages-2.jpg" width="800" height="384" alt="Мост дьявола на фоне каньона">
+            <img class="advantages-second-picture" src="images/advantages/advantages-2.jpg" width="800" height="384" alt="Мост дьявола на фоне каньона.">
 
             <div class="advantages-block">
               <h3 class="advantages-title">
@@ -194,9 +194,9 @@
         <p>
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="button button-hotel-search" href="catalog.html">
+        <button class="button button-hotel-search" type="button">
           поиск гостиницы в седоне
-        </a>
+        </button>
       </section>
 
       <section class="newsletter">
@@ -208,7 +208,7 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="button newsletter-button" type="button" >подписаться</button>
+          <button class="button newsletter-button" type="submit" >подписаться</button>
         </form>
       </section>
     </main>
@@ -271,23 +271,26 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <h2 class="modal-title">Поиск гостиницы в Седоне
+          </h2>
           <form class="auth-form">
             <ul class="field-auth-form">
 
               <li class="field-list">
                 <label class="field-title" for="date-arrival">Дата заезда:</label>
-                <input class="field field-date" id="date-arrival" name="date-arrival" type="text" placeholder="27 апреля 2020">
+                <input class="field-modal-content field-date" id="date-arrival" name="date-arrival" type="text" placeholder="27 апреля 2020">
+                <button class="calendar" type="button"></button>
               </li>
 
               <li class="field-list">
                 <label class="field-title" for="date-departure">Дата выезда:</label>
-                <input class="field field-date" id="date-departure" name="date-departure" type="text" placeholder="1 сентября 2021">
+                <input class="field-modal-content field-date" id="date-departure" name="date-departure" type="text" placeholder="1 сентября 2021">
+                <button class="calendar" type="button"></button>
               </li>
 
               <li class="field-list field-list-adult">
                 <label class="field-title" for="adults">Взрослые:</label>
-                <input class="field field-adults" id="adults" name="adults" type="number" placeholder="2">
+                <input class="field-modal-content field-adults" id="adults" name="adults" type="number" placeholder="2">
                 <button class="field-plus">
                   <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
@@ -324,7 +327,7 @@
                     </span>
                   </span>
 
-                <input class="field field-children" id="children" name="children" type="number" placeholder="1">
+                <input class="field-modal-content field-children" id="children" name="children" type="number" placeholder="1">
                 <button class="field-plus">
                   <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
