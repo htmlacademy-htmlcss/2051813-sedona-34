@@ -21,6 +21,7 @@ html{
 
 body{
   margin:0;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +54,9 @@ body{
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
           box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  flex-direction: column;
+  display: flex;
+  height: 100%;
 }
 
 .main-container{
