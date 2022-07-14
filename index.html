@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="./favicon.ico/favicon.png">
+    <link rel="icon" href="favicon.ico/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -41,19 +41,19 @@
           <li class="navigation-item">
             <a  class="navigation-link navigation-search">
               <span class="visually-hidden">
-                Поиск
+                Поиск.
               </span>
             </a>
           </li>
           <li class="navigation-item">
             <a  class="navigation-link navigation-favorites">
               <span class="visually-hidden">
-                Избранное
+                Избранное.
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <button  class="button navigation-link navigation-button">
+            <button type="button" class="button navigation-link navigation-button">
               Хочу сюда!
             </button>
           </li>
@@ -273,7 +273,7 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне
           </h2>
-          <form class="auth-form">
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
             <ul class="field-auth-form">
 
               <li class="field-list">
@@ -291,14 +291,14 @@
               <li class="field-list field-list-adult">
                 <label class="field-title" for="adults">Взрослые:</label>
                 <input class="field-modal-content field-adults" id="adults" name="adults" type="number" placeholder="2">
-                <button class="field-plus">
+                <button type="button" class="field-plus">
                   <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                     </g>
                     </svg>
                 </button>
-                <button class="field-minus">
+                <button type="button" class="field-minus">
                   <svg class="minus" width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
                     </svg>
@@ -328,14 +328,14 @@
                   </span>
 
                 <input class="field-modal-content field-children" id="children" name="children" type="number" placeholder="1">
-                <button class="field-plus">
+                <button type="button" class="field-plus">
                   <svg class="plus" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                     </g>
                     </svg>
                 </button>
-                <button class="field-minus">
+                <button type="button" class="field-minus">
                   <svg class="minus" width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
                     </svg>
@@ -346,16 +346,16 @@
           </form>
 
           <button class=" modal-search-button" type="submit">Найти
-            <span class="visually-hidden">Найти</span>
+            <span class="visually-hidden">Найти.</span>
           </button>
 
         </section>
 
-        <button class="modal-close-button">
+        <button type="button" class="modal-close-button">
           <svg  aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
               <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
           </svg>
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
 
 
